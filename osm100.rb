@@ -32,7 +32,7 @@ end
 yaml = YAML.load_file('projects.yml')
 yaml['projects'].each do |project|
   project['shortname'] = project['repo'].split('/').last
-  unless Dir.exists?(File.join(@working_dir, project['shortname']))
+  unless Dir.exist?(File.join(@working_dir, project['shortname']))
     clone_project(project)
   end
 
@@ -55,7 +55,7 @@ committers.each do |year, committers|
   total = committers.length
   reference.each do |y, c|
     next unless y < year
-    committers = committers - c
+    committers -= c
   end
   new = committers.length
   puts "#{year} had #{total} committers, of which #{new} were new"
