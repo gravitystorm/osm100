@@ -1,0 +1,94 @@
+people:
+  - name: Andy Allan
+    emails:
+      - github@gravitystorm.co.uk
+      - andy@gravitystorm.co.uk
+      - gravitystorm@gmail.com
+  - name: Martijn van Exel
+    emails:
+      - mvexel@gmail.com
+      - m@rtijn.org
+  - name: Frederik Ramm
+    emails:
+      - frederik@remote.org
+      - framm@0c6e7542-c601-0410-84e7-c038aed88b3b
+      - frederik@dummy.com
+  - name: Dirk Stoecker
+    emails:
+      - openstreetmap@dstoecker.de
+      - stoecker@0c6e7542-c601-0410-84e7-c038aed88b3b
+      - github@dstoecker.de
+  - name: Jonathan Bennett
+    emails:
+      - github@jonno.cix.co.uk
+      - openstreetmap@jonno.cix.co.uk
+  - name: Richard Brinkman
+    emails:
+      - r.brinkman@utwente.nl
+      - richardbrinkman@hotmail.com
+  - name: Mathieu Lepartre
+    emails:
+      - mathieu.leplatre@makina-corpus.com
+      - leplatrem@gmail.com
+      - contact@mathieu-leplatre.info
+  - name: Kai Krueger
+    emails:
+      - kakrueger+github@gmail.com
+      - kakrueger@gmail.com
+      - kai@aiputerlx.(none)
+  - name: Joerg Ostertag
+    emails:
+      - joerg@svn.openstreetmap.org
+      - joerg@dummy.com
+      - openstreetmap@ostertag.name
+  - name: Brian Quinion
+    emails:
+      - brian.quinion@mapquest.com
+      - github@brian.quinion.co.uk
+      - openstreetmap@brian.quinion.co.uk
+  - name: Jeff Janes
+    emails:
+      - jeff.janes@gmail.com
+      - jjanes@foo.bar
+  - name: Pawel Paprota
+    emails:
+      - ppawel@fastmail.fm
+      - pawel.paprota@synaway.com
+  - name: Dennis Luxen
+    emails:
+      - luxen@kit.edu
+      - info@project-osrm.org
+      - dennisluxen@macbook-air.lan
+      - dennisluxen@MacBook-Air.local
+  - name: Emil Tin
+    emails:
+      - emil@tin.dk
+      - emil.tin@tmf.kk.dk
+  - name: Matt Amos
+    emails:
+      - zerebubuth@gmail.com
+      - matt@dev.openstreetmap.org
+  - name: Roland Olbricht
+    emails:
+      - roland.olbricht@gmx.de
+      - roland@roland-ThinkPad-W500.(none)
+      - olbricht@wmaz9.math.uni-wuppertal.de
+  - name: Grant Slater
+    emails:
+      - git@firefishy.com
+      - grant@wwood.co.uk
+      - gitorious@firefishy.com
+      - openstreetmap@firefishy.com
+  - name: Dave Stubbs
+    emails:
+      - osm@randomjunk.co.uk
+      - osm.list@randomjunk.co.uk
+  - name: Harry Wood
+    emails:
+      - github@onlineanimals.co.uk
+      - git@harrywood.co.uk
+      - mail@harrywood.co.uk
+  - name: Immanuel Scholz
+    emails:
+      - immanuel.scholz@gmx.de
+      - imi@0c6e7542-c601-0410-84e7-c038aed88b3b

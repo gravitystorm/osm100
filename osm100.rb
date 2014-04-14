@@ -13,6 +13,21 @@ def clone_project(project)
 end
 
 committers = {}
+all_committers = Set.new
+
+@duplicate_emails = {}
+yaml = YAML.load_file('duplicates.yml')
+yaml['people'].each do |person|
+  canonical = person['emails'].shift
+  person['emails'].each do |email|
+    @duplicate_emails[email] = canonical
+  end
+end
+
+def canonical_email(email)
+  e = @duplicate_emails[email]
+  e || email
+end
 
 yaml = YAML.load_file('projects.yml')
 yaml['projects'].each do |project|
@@ -27,11 +42,14 @@ yaml['projects'].each do |project|
   walker.each do |c|
     year = c.time.year
     committers[year] = Set.new unless committers[year]
-    committers[year].add(c.author[:email])
+    committers[year].add(canonical_email(c.author[:email]))
+    all_committers.add(canonical_email(c.author[:email]))
   end
 end
 
 reference = committers.dup
+
+puts "There were #{all_committers.length} committers in total."
 
 committers.each do |year, committers|
   total = committers.length
