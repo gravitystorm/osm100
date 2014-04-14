@@ -31,6 +31,14 @@ yaml['projects'].each do |project|
   end
 end
 
-committers.each do |key, value|
-  puts "#{key} had #{value.length} committers"
+reference = committers.dup
+
+committers.each do |year, committers|
+  total = committers.length
+  reference.each do |y, c|
+    next unless y < year
+    committers = committers - c
+  end
+  new = committers.length
+  puts "#{year} had #{total} committers, of which #{new} were new"
 end
