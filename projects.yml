@@ -1,0 +1,30 @@
+projects:
+  - name: cgimap
+    repo: https://github.com/zerebubuth/openstreetmap-cgimap
+  - name: iD
+    repo: https://github.com/openstreetmap/iD
+  - name: JOSM
+    repo: https://github.com/openstreetmap/josm
+  - name: JXAPI
+    repo: https://github.com/iandees/xapi-servlet
+  - name: Merkaartor
+    repo: https://github.com/openstreetmap/merkaartor
+  - name: mod_tile
+    repo: https://github.com/openstreetmap/mod_tile
+  - name: nominatim
+    repo: https://github.com/twain47/Nominatim
+  - name: osm2pgsql
+    repo: https://github.com/openstreetmap/osm2pgsql
+  - name: osmosis
+    repo: https://github.com/openstreetmap/osmosis
+  - name: OSRM
+    repo: https://github.com/DennisOSRM/Project-OSRM
+  - name: OWL
+    repo: https://github.com/ppawel/openstreetmap-watch-list
+  - name: overpass
+    repo: https://github.com/drolbr/Overpass-API
+  - name: Potlatch2
+    repo: https://github.com/systemed/potlatch2
+  - name: OpenStreetMap Website
+    repo: https://github.com/openstreetmap/openstreetmap-website
+
