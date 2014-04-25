@@ -19,7 +19,8 @@ def update_project(project)
   %x{cd #{dir} && git pull}
 end
 
-committers = {}
+committers_by_year = {}
+committers_by_project = {}
 all_committers = Set.new
 
 @duplicate_emails = {}
@@ -48,19 +49,21 @@ yaml['projects'].each do |project|
   repo = Rugged::Repository.new(File.join(@working_dir, project['shortname']))
   walker = Rugged::Walker.new(repo)
   walker.push(repo.head.target)
+  committers_by_project[project['shortname']] = Set.new
   walker.each do |c|
     year = c.time.year
-    committers[year] = Set.new unless committers[year]
-    committers[year].add(canonical_email(c.author[:email]))
+    committers_by_year[year] = Set.new unless committers_by_year[year]
+    committers_by_year[year].add(canonical_email(c.author[:email]))
+    committers_by_project[project['shortname']].add(canonical_email(c.author[:email]))
     all_committers.add(canonical_email(c.author[:email]))
   end
 end
 
-reference = committers.dup
+reference = committers_by_year.dup
 
 puts "There were #{all_committers.length} committers in total."
 
-committers.each do |year, committers|
+committers_by_year.each do |year, committers|
   total = committers.length
   reference.each do |y, c|
     next unless y < year
@@ -68,4 +71,9 @@ committers.each do |year, committers|
   end
   new = committers.length
   puts "#{year} had #{total} committers, of which #{new} were new"
+end
+
+committers_by_project.each do |project, committers|
+  total = committers.length
+  puts "#{project} had #{committers.length} committers"
 end
