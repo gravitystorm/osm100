@@ -12,6 +12,13 @@ def clone_project(project)
   Rugged::Repository.clone_at(project['repo'], File.join(@working_dir, project['shortname']))
 end
 
+def update_project(project)
+  puts "Updating #{project['repo']}"
+  dir = File.join(@working_dir, project['shortname'])
+  # rugged doesn't support pulls, and every rugged-based workaround looks monstrous
+  %x{cd #{dir} && git pull}
+end
+
 committers = {}
 all_committers = Set.new
 
@@ -32,7 +39,9 @@ end
 yaml = YAML.load_file('projects.yml')
 yaml['projects'].each do |project|
   project['shortname'] = project['repo'].split('/').last
-  unless Dir.exist?(File.join(@working_dir, project['shortname']))
+  if Dir.exist?(File.join(@working_dir, project['shortname']))
+    update_project(project)
+  else
     clone_project(project)
   end
 
