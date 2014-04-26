@@ -1,9 +1,14 @@
 #!/usr/bin/ruby
 
+require 'rubygems'
+
 require 'yaml'
-require 'rugged'
 require 'set'
 require 'pry'
+
+require 'bundler'
+Bundler.setup(:default)
+require 'rugged'
 
 @working_dir = File.join(File.dirname(__FILE__), 'tmp')
 
