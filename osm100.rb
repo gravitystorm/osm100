@@ -63,7 +63,7 @@ reference = committers_by_year.dup
 
 puts "There were #{all_committers.length} committers in total."
 
-committers_by_year.each do |year, committers|
+committers_by_year.dup.each do |year, committers|
   total = committers.length
   reference.each do |y, c|
     next unless y < year
@@ -77,3 +77,29 @@ committers_by_project.each do |project, committers|
   total = committers.length
   puts "#{project} had #{committers.length} committers"
 end
+
+appearances = []
+all_committers.each do |committer|
+  years = []
+  committers_by_year.each do |year, committers|
+    years << year if committers.include?(committer)
+  end
+  appearances << years
+end
+
+cohorts = {}
+committers_by_year.each_key do |year|
+  cohorts[year] = {}
+  appearances.each do |years|
+    # binding.pry
+    next unless years.include?(year)
+    first_year = years.min
+    if cohorts[year][first_year]
+      cohorts[year][first_year] += 1
+    else
+      cohorts[year][first_year] = 1
+    end
+  end
+end
+
+puts cohorts
