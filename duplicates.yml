@@ -79,6 +79,8 @@ people:
       - grant@wwood.co.uk
       - gitorious@firefishy.com
       - openstreetmap@firefishy.com
+      - github@firefishy.com
+      - grant.slater@wearefriday.com
   - name: Dave Stubbs
     emails:
       - osm@randomjunk.co.uk
@@ -92,3 +94,31 @@ people:
     emails:
       - immanuel.scholz@gmx.de
       - imi@0c6e7542-c601-0410-84e7-c038aed88b3b
+  - name: Shaun McDonald
+    emails:
+      - mail@shaunmcdonald.me.uk
+      - shaun@shaunmcdonald.me.uk
+  - name: Dane Springmeyer
+    emails:
+      - dane@mapbox.com
+      - dane@dbsgeo.com
+  - name: Saman Bemel-Benrud
+    emails:
+      - saman@mapbox.com
+      - samanpwbb@gmail.com
+  - name: Simon Poole
+    emails:
+      - simon@poole.ch
+      - simonpoole@users.noreply.github.com
+  - name: Jordan Hollinger
+    emails:
+      - jordan.hollinger@mapquest.com
+      - jhollinger2@gmail.com
+  - name: Tristen Brown
+    emails:
+      - tristen@users.noreply.github.com
+      - tristen.brown@gmail.com
+  - name: Jochen
+    emails:
+      - jochen@topf.org
+      - jochen@remote.org
