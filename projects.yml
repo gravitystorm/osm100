@@ -1,30 +1,38 @@
 projects:
-  - name: cgimap
-    repo: https://github.com/zerebubuth/openstreetmap-cgimap
-  - name: iD
-    repo: https://github.com/openstreetmap/iD
-  - name: JOSM
-    repo: https://github.com/openstreetmap/josm
-  - name: JXAPI
-    repo: https://github.com/iandees/xapi-servlet
-  - name: Merkaartor
-    repo: https://github.com/openstreetmap/merkaartor
-  - name: mod_tile
-    repo: https://github.com/openstreetmap/mod_tile
-  - name: nominatim
-    repo: https://github.com/twain47/Nominatim
-  - name: osm2pgsql
-    repo: https://github.com/openstreetmap/osm2pgsql
-  - name: osmosis
-    repo: https://github.com/openstreetmap/osmosis
-  - name: OSRM
-    repo: https://github.com/DennisOSRM/Project-OSRM
-  - name: OWL
-    repo: https://github.com/ppawel/openstreetmap-watch-list
-  - name: overpass
-    repo: https://github.com/drolbr/Overpass-API
-  - name: Potlatch2
-    repo: https://github.com/systemed/potlatch2
+  # Core software that serves www.osm.org
   - name: OpenStreetMap Website
     repo: https://github.com/openstreetmap/openstreetmap-website
-
+  - name: cgimap
+    repo: https://github.com/zerebubuth/openstreetmap-cgimap
+  # Editors
+  - name: JOSM
+    repo: https://github.com/openstreetmap/josm
+    # There's no P1 git repo
+  - name: Potlatch2
+    repo: https://github.com/systemed/potlatch2
+  - name: Merkaartor
+    repo: https://github.com/openstreetmap/merkaartor
+  - name: iD
+    repo: https://github.com/openstreetmap/iD
+  # General utilities
+  - name: osmosis
+    repo: https://github.com/openstreetmap/osmosis
+  # XAPI-like mirrors
+  - name: JXAPI
+    repo: https://github.com/iandees/xapi-servlet
+  - name: overpass
+    repo: https://github.com/drolbr/Overpass-API
+  # OSM-specific parts of the tile rendering stack
+  - name: osm2pgsql
+    repo: https://github.com/openstreetmap/osm2pgsql
+  - name: mod_tile
+    repo: https://github.com/openstreetmap/mod_tile
+  # Geocoding
+  - name: nominatim
+    repo: https://github.com/twain47/Nominatim
+  # Routing
+  - name: OSRM
+    repo: https://github.com/Project-OSRM/osrm-backend
+  # Other
+  - name: OWL
+    repo: https://github.com/ppawel/openstreetmap-watch-list
