@@ -7,32 +7,61 @@ projects:
   # Editors
   - name: JOSM
     repo: https://github.com/openstreetmap/josm
-    # There's no P1 git repo
+  - name: JOSM Plugins
+    repo: https://github.com/openstreetmap/josm-plugins
+    # P1 doesn't have a git repo
   - name: Potlatch2
     repo: https://github.com/systemed/potlatch2
   - name: Merkaartor
     repo: https://github.com/openstreetmap/merkaartor
   - name: iD
     repo: https://github.com/openstreetmap/iD
-  # General utilities
+  - name: Vespucci
+    repo: https://github.com/MarcusWolschon/osmeditor4android
+  # General utilities, libraries, and other processing
   - name: osmosis
     repo: https://github.com/openstreetmap/osmosis
+  - name: taginfo
+    repo: https://github.com/joto/taginfo/
+  - name: Osmium
+    repo: https://github.com/joto/osmium
+  - name: Libosmium
+    repo: https://github.com/osmcode/libosmium
+  - name: node-osmium
+    repo: https://github.com/osmcode/node-osmium
+  - name: pyosmium
+    repo: https://github.com/osmcode/pyosmium
+  - name: osmcoastline
+    repo: https://github.com/osmcode/osmcoastline
   # XAPI-like mirrors
   - name: JXAPI
     repo: https://github.com/iandees/xapi-servlet
   - name: overpass
     repo: https://github.com/drolbr/Overpass-API
+  - name: Overpass Turbo
+    repo: https://github.com/tyrasd/overpass-turbo
+  # Stylesheets
+    # tiles@home doesn't have a git repo
+  - name: OSM XML Stylesheets
+    repo: https://github.com/openstreetmap/mapnik-stylesheets
+  - name: OpenStreetMap Carto
+    repo: https://github.com/gravitystorm/openstreetmap-carto
   # OSM-specific parts of the tile rendering stack
   - name: osm2pgsql
     repo: https://github.com/openstreetmap/osm2pgsql
   - name: mod_tile
     repo: https://github.com/openstreetmap/mod_tile
+  - name: tirex
+    repo: https://github.com/geofabrik/tirex
   # Geocoding
   - name: nominatim
     repo: https://github.com/twain47/Nominatim
   # Routing
   - name: OSRM
     repo: https://github.com/Project-OSRM/osrm-backend
+  - name: GraphHopper
+    repo: https://github.com/graphhopper/graphhopper/
+    # Gosmore doesn't have a git repo
   # Other
   - name: OWL
     repo: https://github.com/ppawel/openstreetmap-watch-list

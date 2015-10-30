@@ -6,7 +6,15 @@ I would like to see 100 new OpenStreetMap developers in 2014. This project analy
 
 OpenStreetMap has a near limitless number of projects which use the data in one way or another. It is a matter of debate which projects are 'OpenStreetMap' projects and which just happen to use OSM data.
 
-The list of projects comes from the OSMF Engineering Working Group documentation survey in October 2013. Perhaps that list needs to be changed?
+Projects listed are
+
+* OSM data editors
+* OSM-specific software run on osm.org
+* OSM-specific software referred to in common documentation (e.g. switch2osm)
+* Utilities supporting the above
+* Software which used to be the above, but has been replaced. Historic software matters for getting historic numbers
+
+It does not include software which is not primarily OSM-specific, like Mapnik, Leaflet, or PostGIS. It would be difficult to develop without these, but they're not OSM software and have a different pool of developers.
 
 ## Contributors
 
