@@ -27,4 +27,8 @@ projects:
     repo: https://github.com/systemed/potlatch2
   - name: OpenStreetMap Website
     repo: https://github.com/openstreetmap/openstreetmap-website
+  - name: OverPass Turbo
+    repo: https://github.com/tyrasd/overpass-turbo
+  - name: uMap
+    repo: https://github.com/umap-project/umap
 
