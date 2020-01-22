@@ -4,6 +4,7 @@ people:
       - github@gravitystorm.co.uk
       - andy@gravitystorm.co.uk
       - gravitystorm@gmail.com
+      - git@gravitystorm.co.uk
   - name: Martijn van Exel
     emails:
       - mvexel@gmail.com
@@ -26,6 +27,7 @@ people:
     emails:
       - r.brinkman@utwente.nl
       - richardbrinkman@hotmail.com
+      - r.brinkman@gmail.com
   - name: Mathieu Lepartre
     emails:
       - mathieu.leplatre@makina-corpus.com
@@ -102,6 +104,7 @@ people:
     emails:
       - dane@mapbox.com
       - dane@dbsgeo.com
+      - springmeyer@users.noreply.github.com
   - name: Saman Bemel-Benrud
     emails:
       - saman@mapbox.com
@@ -110,6 +113,8 @@ people:
     emails:
       - simon@poole.ch
       - simonpoole@users.noreply.github.com
+      - simon@mail.poole.ch
+      - simon@rails-dev.poole.ch
   - name: Jordan Hollinger
     emails:
       - jordan.hollinger@mapquest.com
@@ -122,3 +127,75 @@ people:
     emails:
       - jochen@topf.org
       - jochen@remote.org
+  - name: Klumbumbus
+    emails:
+      - Klumbumbus@0c6e7542-c601-0410-84e7-c038aed88b3b
+      - Klumbumbus@users.noreply.github.com
+  - name: mmd
+    emails:
+      - mmd-osm@users.noreply.github.com
+      - mmd.osm@gmail.com
+  - name: mtm
+    emails:
+      - mtm@marcs-MacBook-Pro.local
+      - mtm@opencagedata.com
+      - mtmail@gmx.net
+  - name: aruna
+    emails:
+      - aruna@Arunas-MacBook-Pro.local
+      - aruna@mapbox.com
+  - name: cbro
+    emails:
+      - cbro@semperpax.com
+      - cbro@ubuntu-desktop.(none)
+  - name: Dan Stowell
+    emails:
+      - danstowell+github@gmail.com
+      - danstowell@users.sourceforge.net
+  - name: Serge
+    emails:
+      - emacsen@emacsen.net
+      - emacsen@gmail.com
+      - serge@wroclawski.org
+  - name: gaoxm
+    emails:
+      - gaoxm@fb.com
+      - gaoxm@gaoxm-mbp.dhcp.thefacebook.com
+      - gaoxm@gaoxm-mbp.local
+  - name: Ilya Zverev
+    emails:
+      - ilia.zverev@gojuno.com
+      - ilya@zverev.info
+      - zverik@textual.ru
+  - name: Manfred Brandl
+    emails:
+      - manfred.brandl@verbundlinie.at
+      - manfred@brandl.net
+  - name: Pierre Giraud
+    emails:
+      - pierre.giraud@camptocamp.com
+      - pierre.giraud@dalibo.com
+  - name: Quincy Morgan
+    emails:
+      - quincy.morgan@icloud.com
+      - quincylvania@users.noreply.github.com
+  - name: Richard Fairhurst
+    emails:
+      - richard@systemeD.net
+      - richard@systemed.net
+  - name: Rory
+    emails:
+      - rory@geofabrik.de
+      - rory@technomancy.org
+  - name: Sven Geggus
+    emails:
+      - sven-git@geggus.net
+      - sven@gegg.us
+  - name: Tom MacWright
+    emails:
+      - tom@macwright.org
+      - tmcw@users.noreply.github.com
+  - name: Tristan
+    emails:
+      - tristen@tristen.ca
+      - tristen@users.noreply.github.com
