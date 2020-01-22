@@ -1,5 +1,7 @@
-Encoding:
-  Enabled: false
 AllCops:
   Exclude:
-    - tmp/**
+    - 'tmp/**/*'
+Layout/LineLength:
+  Max: 120
+Style/Encoding:
+  Enabled: false

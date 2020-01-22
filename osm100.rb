@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+# frozen_string_literal: true
 
 require 'yaml'
 require 'rugged'
@@ -16,7 +17,7 @@ def update_project(project)
   puts "Updating #{project['repo']}"
   dir = File.join(@working_dir, project['shortname'])
   # rugged doesn't support pulls, and every rugged-based workaround looks monstrous
-  %x{cd #{dir} && git pull}
+  `cd #{dir} && git pull`
 end
 
 committers_by_year = {}
@@ -67,6 +68,7 @@ committers_by_year.dup.each do |year, committers|
   total = committers.length
   reference.each do |y, c|
     next unless y < year
+
     committers -= c
   end
   new = committers.length
@@ -74,7 +76,6 @@ committers_by_year.dup.each do |year, committers|
 end
 
 committers_by_project.each do |project, committers|
-  total = committers.length
   puts "#{project} had #{committers.length} committers"
 end
 
@@ -93,6 +94,7 @@ committers_by_year.each_key do |year|
   appearances.each do |years|
     # binding.pry
     next unless years.include?(year)
+
     first_year = years.min
     if cohorts[year][first_year]
       cohorts[year][first_year] += 1
