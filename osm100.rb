@@ -7,11 +7,12 @@ require 'set'
 require 'pry'
 require 'optparse'
 
-options = { update: false }
+options = { update: false, committers: false }
 optparse = OptionParser.new do |opts|
   opts.banner = 'Usage: osm100.rb [options]'
 
   opts.on('--[no-]update', 'Update cloned projects, default: false')
+  opts.on('--[no-]committers', 'Output list of committers, default: false')
 
   opts.on_tail('-h', '--help', 'Show this message') do
     puts opts
@@ -99,6 +100,7 @@ end
 
 appearances = []
 all_committers.each do |committer|
+  puts committer if options[:committers]
   years = []
   committers_by_year.each do |year, committers|
     years << year if committers.include?(committer)
