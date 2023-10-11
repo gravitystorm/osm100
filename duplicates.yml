@@ -115,6 +115,7 @@ people:
       - simonpoole@users.noreply.github.com
       - simon@mail.poole.ch
       - simon@rails-dev.poole.ch
+      - sp8962@gmail.com@621d1362-f450-11dd-a7be-4b3ef3b0700c
   - name: Jordan Hollinger
     emails:
       - jordan.hollinger@mapquest.com
@@ -129,8 +130,10 @@ people:
       - jochen@remote.org
   - name: Klumbumbus
     emails:
-      - Klumbumbus@0c6e7542-c601-0410-84e7-c038aed88b3b
       - Klumbumbus@users.noreply.github.com
+      - Klumbumbus@0c6e7542-c601-0410-84e7-c038aed88b3b
+      - Klumbumbus@b9d5c4c9-76e1-0310-9c85-f3177eceb1e4
+      - klumbumbus@b9d5c4c9-76e1-0310-9c85-f3177eceb1e4
   - name: mmd
     emails:
       - mmd-osm@users.noreply.github.com
@@ -200,3 +203,43 @@ people:
     emails:
       - tristen@tristen.ca
       - tristen@users.noreply.github.com
+  - name: Paul Norman
+    emails:
+      - penorman@mac.com
+      - Paul.Norman@mapquest.com
+  - name: Tom Hughes
+    emails:
+      - tom@compton.nu
+      - tomhughes@b9d5c4c9-76e1-0310-9c85-f3177eceb1e4
+  - name: Taylor Smock
+    emails:
+      - taylor.smock@0c6e7542-c601-0410-84e7-c038aed88b3b
+      - taylor.smock@b9d5c4c9-76e1-0310-9c85-f3177eceb1e4
+      - tsmock@fb.com
+  - name: Marcus Wolschon
+    emails:
+      - marcus.wolschon@googlemail.com
+      - marcuswolschon@621d1362-f450-11dd-a7be-4b3ef3b0700c
+      - Marcus.Wolschon@621d1362-f450-11dd-a7be-4b3ef3b0700c
+      - Wolschon Marcus@wolschon.biz
+      - Marcus.Wolschon@googlemail.com@621d1362-f450-11dd-a7be-4b3ef3b0700c
+      - Marcus.Wolschon@gmail.com@621d1362-f450-11dd-a7be-4b3ef3b0700c
+      - marcus.wolschon@621d1362-f450-11dd-a7be-4b3ef3b0700c
+  - name: Martin Raifer
+    emails:
+      - tyr.asd@gmail.com
+      - martin.raifer@heigit.org
+      - martin@raifer.tech
+  - name: Brian Derocher
+    emails:
+      - brian@derocher.org
+      - brian+github@derocher.org
+  - name: Mike Migurski
+    emails:
+      - mike@teczno.com
+      - mike-github@teczno.com
+      - migurski@fb.com
+  - name: Stefan Baebler
+    emails:
+      - stefan.baebler@gmail.com
+      - sbaebler@outbrain.com
