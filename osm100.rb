@@ -5,6 +5,20 @@ require 'yaml'
 require 'rugged'
 require 'set'
 require 'pry'
+require 'optparse'
+
+options = { update: false }
+optparse = OptionParser.new do |opts|
+  opts.banner = 'Usage: osm100.rb [options]'
+
+  opts.on('--[no-]update', 'Update cloned projects, default: false')
+
+  opts.on_tail('-h', '--help', 'Show this message') do
+    puts opts
+    exit
+  end
+end
+optparse.parse!(into: options)
 
 @working_dir = File.join(File.dirname(__FILE__), 'tmp')
 
@@ -42,7 +56,11 @@ yaml = YAML.load_file('projects.yml')
 yaml['projects'].each do |project|
   project['shortname'] = project['repo'].split('/').last
   if Dir.exist?(File.join(@working_dir, project['shortname']))
-    update_project(project)
+    if options[:update]
+      update_project(project)
+    else
+      puts 'skipping update'
+    end
   else
     clone_project(project)
   end
