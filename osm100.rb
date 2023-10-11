@@ -49,7 +49,7 @@ yaml['projects'].each do |project|
 
   repo = Rugged::Repository.new(File.join(@working_dir, project['shortname']))
   walker = Rugged::Walker.new(repo)
-  walker.push(repo.head.target)
+  walker.push(repo.head.target_id)
   committers_by_project[project['shortname']] = Set.new
   walker.each do |c|
     year = c.time.year
@@ -92,7 +92,6 @@ cohorts = {}
 committers_by_year.each_key do |year|
   cohorts[year] = {}
   appearances.each do |years|
-    # binding.pry
     next unless years.include?(year)
 
     first_year = years.min
